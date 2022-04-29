@@ -1,5 +1,5 @@
 This is a PyTorch implementation of the paper "To pretrain or not? A systematic analysis of the benefits of pretraining in diabetic retinopathy":
-The code base as well as this README file heavuly borrows for the repository of [MoCo v2 paper](https://arxiv.org/abs/2003.04297):
+The code base as well as this README file heavily borrows from the repository of [MoCo v2 paper](https://arxiv.org/abs/2003.04297):
 
 ### Preparation
 
@@ -45,7 +45,7 @@ python main_lincls.py \
   --dist-url 'tcp://localhost:10001' --multiprocessing-distributed --world-size 1 --rank 0 \
   [your eyepacs-folder with train and val folders]
 ```
-This stage is always on the eyepacs-1 dataset. 
+This stage is always on the Eyepacs-1 dataset. 
 
 For the fully supervised setting, run the above code with `--pretrained [your checkpoint path]` removed. 
 
